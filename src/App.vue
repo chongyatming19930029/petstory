@@ -8,7 +8,7 @@
 <script>
   import Tarbar from "@/views/Tarbar.vue"
   export default {
-      components: { Tarbar }
+    components: { Tarbar }
   }
 </script>
 
