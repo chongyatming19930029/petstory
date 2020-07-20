@@ -5,11 +5,15 @@ import store from './store'
 
 Vue.config.productionTip = false
 
-// 引入全部组件 Mint Ui
+// Mint-Ui
 import MintUI from 'mint-ui'
 import 'mint-ui/lib/style.css'
 Vue.use(MintUI)
-//Mint Ui End
+//Mint-Ui End
+
+//Iconfont
+import "@/assets/iconfont/iconfont.css";
+//Iconfont End
 
 new Vue({
   router,

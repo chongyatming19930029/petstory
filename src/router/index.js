@@ -1,13 +1,20 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
+import Vue from 'vue';
+import VueRouter from 'vue-router';
+import Home from './Home/index.js';
+import Shop from './Shop/index.js';
+import BBS from './BBS/index.js';
+import User from './User/index.js';
 
-Vue.use(VueRouter)
+Vue.use(VueRouter);
 
   const routes = [
+  Home,
+  Shop,
+  BBS,
+  User,
   {
-    path: '/',
-    name: 'Home',
-    component: () => import('../views/Home.vue')
+    path: '/*',
+    redirect: { name: 'Home' }
   },
 ]
 
